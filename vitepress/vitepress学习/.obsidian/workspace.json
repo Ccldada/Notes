@@ -1,31 +1,31 @@
 {
   "main": {
-    "id": "a1424d66597e01e2",
+    "id": "cfdcd493c1d63071",
     "type": "split",
     "children": [
       {
-        "id": "a9ea87d7063bc4a7",
+        "id": "960e6e1309f75b84",
         "type": "tabs",
         "children": [
           {
-            "id": "585f2bda0424f761",
+            "id": "9ed7f2a02177d567",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文章0.md",
+                "file": "安装.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fc701a54acbbe3e2",
+            "id": "a33f479e6c78a1e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文章0.md",
+                "file": "vitepress教程.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,15 +38,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "57cbd0f285ccb00f",
+    "id": "b1646360cc61a20f",
     "type": "split",
     "children": [
       {
-        "id": "2015e3fcd9d0a0b2",
+        "id": "dded3550a1fae42f",
         "type": "tabs",
         "children": [
           {
-            "id": "f1f3b5d0d8862dd7",
+            "id": "ac9ebdec6cd152a8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +56,7 @@
             }
           },
           {
-            "id": "6feeacd1e5456ec6",
+            "id": "5b340e37a672c290",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +71,7 @@
             }
           },
           {
-            "id": "27d8d35817767cd0",
+            "id": "f644b624d482a07b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +85,20 @@
     "width": 300
   },
   "right": {
-    "id": "5d180376efafacb8",
+    "id": "02037330e7e1d237",
     "type": "split",
     "children": [
       {
-        "id": "a03491620da878fc",
+        "id": "82f80dfa83b9da32",
         "type": "tabs",
         "children": [
           {
-            "id": "c563d91183c2956a",
+            "id": "592f78b7b407de88",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文章0.md",
+                "file": "vitepress教程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +110,19 @@
             }
           },
           {
-            "id": "c6a4d05a17f3c6f2",
+            "id": "40c53e33161bc2b1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文章0.md",
+                "file": "vitepress教程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "dff326615f15a5d2",
+            "id": "3facf96a4c01b2cb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,12 +133,12 @@
             }
           },
           {
-            "id": "509086dbc045bafe",
+            "id": "41e81efd60a6112e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "文章0.md"
+                "file": "vitepress教程.md"
               }
             }
           }
@@ -159,9 +159,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f1f3b5d0d8862dd7",
+  "active": "a33f479e6c78a1e2",
   "lastOpenFiles": [
-    "文章一.md",
-    "文章0.md"
+    "Pasted image 20240717171726.png",
+    "安装.md",
+    "Pasted image 20240717170131.png",
+    "vitepress教程.md",
+    "未命名.canvas"
   ]
 }

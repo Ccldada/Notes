@@ -1,52 +1,53 @@
 {
   "main": {
-    "id": "a1424d66597e01e2",
+    "id": "4e6755f350d92eec",
     "type": "split",
     "children": [
       {
-        "id": "a9ea87d7063bc4a7",
+        "id": "dcc038d5de358353",
         "type": "tabs",
         "children": [
           {
-            "id": "585f2bda0424f761",
+            "id": "7e05b0dabbfe0b04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "文章0.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc701a54acbbe3e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "文章0.md",
+                "file": "01.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "535116a0405f8959",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d66a28bb7385b94",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "57cbd0f285ccb00f",
+    "id": "0ba2580067896ee3",
     "type": "split",
     "children": [
       {
-        "id": "2015e3fcd9d0a0b2",
+        "id": "3c82dee9d73fff48",
         "type": "tabs",
         "children": [
           {
-            "id": "f1f3b5d0d8862dd7",
+            "id": "985dda00f8002540",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +57,7 @@
             }
           },
           {
-            "id": "6feeacd1e5456ec6",
+            "id": "f05884d482f7225a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +72,7 @@
             }
           },
           {
-            "id": "27d8d35817767cd0",
+            "id": "414b94a1cf209253",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +86,20 @@
     "width": 300
   },
   "right": {
-    "id": "5d180376efafacb8",
+    "id": "9bded0aabdd7726e",
     "type": "split",
     "children": [
       {
-        "id": "a03491620da878fc",
+        "id": "d6be2b45cd337d37",
         "type": "tabs",
         "children": [
           {
-            "id": "c563d91183c2956a",
+            "id": "5b38afde1b13f5b8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文章0.md",
+                "file": "01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +111,19 @@
             }
           },
           {
-            "id": "c6a4d05a17f3c6f2",
+            "id": "69cb0966a2a08787",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文章0.md",
+                "file": "01.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "dff326615f15a5d2",
+            "id": "ae79f22c7ef4aadf",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,12 +134,12 @@
             }
           },
           {
-            "id": "509086dbc045bafe",
+            "id": "c943e06cf549dced",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "文章0.md"
+                "file": "01.md"
               }
             }
           }
@@ -159,9 +160,8 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f1f3b5d0d8862dd7",
+  "active": "7e05b0dabbfe0b04",
   "lastOpenFiles": [
-    "文章一.md",
-    "文章0.md"
+    "01.md"
   ]
 }
