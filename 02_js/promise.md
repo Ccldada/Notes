@@ -106,7 +106,6 @@ async/await 
 说明: then()的语法糖, 相当于: then(undefined, onRejected)
 
 ```javascript
-<script>
         //
         let p = new Promise((resolve, reject) => {
             // ** 同步调用
@@ -121,7 +120,6 @@ async/await 
         p.catch(reason => {
             console.log(reason);
         });
-</script>
 ```
 
 4. Promise.resolve 方法: (value) => {}
@@ -415,7 +413,7 @@ p.then(value => {
 # 实践
 
 1. 初体验 setTimeout
-```javascript
+```xml
 <!doctype html>
 <html lang="en">
 <head>
@@ -521,7 +519,7 @@ p.then(value=>{
 
 ```
 3. ajax封装
-```javascript
+```xml
 <!DOCTYPE html>
 <html lang="en">
 <head>

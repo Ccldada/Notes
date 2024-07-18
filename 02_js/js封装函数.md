@@ -1,12 +1,12 @@
 转自 [https://segmentfault.com/a/1190000039220666](https://segmentfault.com/a/1190000039220666)
 
-1. 返回数据类型
+# 1. 返回数据类型
 ```javascript
 function type(para) {
     return Object.prototype.toString.call(para)
 }
 ```
-2. 数组去重
+# 2. 数组去重
 ```javascript
 function unique1(arr) {
     return [...new Set(arr)]
@@ -32,7 +32,7 @@ function unique3(arr) {
     return result;
 }
 ```
-3. 字符串去重
+# 3. 字符串去重
 ```javascript
 String.prototype.unique = function () {
     var obj = {},
@@ -52,7 +52,7 @@ function uniq(str) {
     return str.replace(/(\w)\1+/g, '$1')
 }
 ```
-4. 拷贝
+# 4. 拷贝
 ```javascript
 //深克隆（深克隆不考虑函数）
 function deepClone(obj, result) {
@@ -101,7 +101,7 @@ function deepClone(target) {
 // 无法复制函数
 var o1 = jsON.parse(jsON.stringify(obj1));
 ```
-5. reverse原理及扩展
+# 5. reverse原理及扩展
 ```javascript
 // 改变原数组
 Array.prototype.myReverse = function () {
@@ -114,7 +114,7 @@ Array.prototype.myReverse = function () {
     return this;
 }
 ```
-6. 圣杯模式继承
+# 6. 圣杯模式继承
 ```javascript
 function inherit(Target, Origin) {
     function F() {};
@@ -125,7 +125,7 @@ function inherit(Target, Origin) {
     Target.prop.uber = Origin.prototype;
 }
 ```
-7. 字符串只出现一次字母
+# 7. 字符串只出现一次字母
 ```javascript
 String.prototype.firstAppear = function () {
     var obj = {},
@@ -144,7 +144,7 @@ String.prototype.firstAppear = function () {
     }
 }
 ```
-8. 找元素的第n级父元素
+# 8. 找元素的第n级父元素
 ```javascript
 function parents(ele, n) {
     while (ele && n) {
@@ -154,7 +154,7 @@ function parents(ele, n) {
     return ele;
 }
 ```
-9. 返回元素的第n个兄弟节点
+# 9. 返回元素的第n个兄弟节点
 ```javascript
 function retSibling(e, n) {
     while (e && n) {
@@ -177,7 +177,7 @@ function retSibling(e, n) {
     return e;
 }
 ```
-10. 封装mychildren
+# 10. 封装mychildren
 ```javascript
 function myChildren(e) {
     var children = e.childNodes,
@@ -191,7 +191,7 @@ function myChildren(e) {
     return arr;
 }
 ```
-11. 判断元素有没有子元素
+# 11. 判断元素有没有子元素
 ```javascript
 function hasChildren(e) {
     var children = e.childNodes,
@@ -204,7 +204,7 @@ function hasChildren(e) {
     return false;
 }
 ```
-12. 元素插到另一个元素后面
+# 12. 元素插到另一个元素后面
 ```javascript
 Element.prototype.insertAfter = function (target, elen) {
     var nextElen = elen.nextElenmentSibling;
@@ -215,7 +215,7 @@ Element.prototype.insertAfter = function (target, elen) {
     }
 }
 ```
-13. 返回当前的时间
+# 13. 返回当前的时间
 ```javascript
 function getDateTime() {
     var date = new Date(),
@@ -239,7 +239,7 @@ function getDateTime() {
     return "" + year + "年" + month + "月" + day + "日" + hour + "时" + minute + "分" + second + "秒"
 }
 ```
-14. 获得滚动条的滚动距离
+# 14. 获得滚动条的滚动距离
 ```javascript
 function getScrollOffset() {
     if (window.pageXOffset) {
@@ -255,7 +255,7 @@ function getScrollOffset() {
     }
 }
 ```
-15. 获得视口尺寸
+# 15. 获得视口尺寸
 ```javascript
 function getViewportOffset() {
     if (window.innerWidth) {
@@ -281,13 +281,13 @@ function getViewportOffset() {
     }
 }
 ```
-16. 获取任一元素任意属性
+# 16. 获取任一元素任意属性
 ```javascript
 function getStyle(elem, prop) {
     return window.getComputedStyle ? window.getComputedStyle(elem, null)[prop] : elem.currentStyle[prop]
 }
 ```
-17. 绑定事件兼容代码
+# 17. 绑定事件兼容代码
 ```javascript
 function addEvent(elem, type, handle) {
     if (elem.addEventListener) { //非ie和非ie9
@@ -301,7 +301,7 @@ function addEvent(elem, type, handle) {
     }
 }
 ```
-18. 解绑事件
+# 18. 解绑事件
 ```javascript
 function removeEvent(elem, type, handle) {
     if (elem.removeEventListener) { //非ie和非ie9
@@ -313,7 +313,7 @@ function removeEvent(elem, type, handle) {
     }
 }
 ```
-19. 取消冒泡兼容事件
+# 19. 取消冒泡兼容事件
 ```javascript
 function stopBubble(e) {
     if (e && e.stopPropagation) {
@@ -323,7 +323,7 @@ function stopBubble(e) {
     }
 }
 ```
-20. 检验字符串是否是回文
+# 20. 检验字符串是否是回文
 ```javascript
 function isPalina(str) {
     if (Object.prototype.toString.call(str) !== '[object String]') {
@@ -343,7 +343,7 @@ function isPalindrome(str) {
     return (str == str.split('').reverse().join(''))
 }
 ```
-21. 兼容getElementsByClassName方法
+# 21. 兼容getElementsByClassName方法
 ```javascript
 Element.prototype.getElementsByClassName = Document.prototype.getElementsByClassName = function (_className) {
     var allDomArray = document.getElementsByTagName('*');
@@ -364,7 +364,7 @@ Element.prototype.getElementsByClassName = Document.prototype.getElementsByClass
     return lastDomArray;
 }
 ```
-22. 运动函数
+# 22. 运动函数
 ```javascript
 function animate(obj, json, callback) {
     clearInterval(obj.timer);
@@ -397,7 +397,7 @@ function animate(obj, json, callback) {
     }, 30)
 }
 ```
-23. 弹性运动
+# 23. 弹性运动
 ```javascript
 function ElasticMovement(obj, target) {
     clearInterval(obj.timer);
@@ -417,7 +417,7 @@ function ElasticMovement(obj, target) {
     }, 30);
 }
 ```
-24. 封装自己的forEach方法
+# 24. 封装自己的forEach方法
 ```javascript
 Array.prototype.myForEach = function (func, obj) {
     var len = this.length;
@@ -428,7 +428,7 @@ Array.prototype.myForEach = function (func, obj) {
     }
 }
 ```
-25. 封装自己的filter方法
+# 25. 封装自己的filter方法
 ```javascript
 Array.prototype.myFilter = function (func, obj) {
     var len = this.length;
@@ -440,7 +440,7 @@ Array.prototype.myFilter = function (func, obj) {
     return arr;
 }
 ```
-26. 数组map方法
+# 26. 数组map方法
 ```javascript
 Array.prototype.myMap = function (func) {
     var arr = [];
@@ -452,7 +452,7 @@ Array.prototype.myMap = function (func) {
     return arr;
 }
 ```
-27. 数组every方法
+# 27. 数组every方法
 ```javascript
 Array.prototype.myEvery = function (func) {
     var flag = true;
@@ -467,7 +467,7 @@ Array.prototype.myEvery = function (func) {
     return flag;
 }
 ```
-28. 数组reduce方法
+# 28. 数组reduce方法
 ```javascript
 Array.prototype.myReduce = function (func, initialValue) {
     var len = this.length,
@@ -488,7 +488,7 @@ Array.prototype.myReduce = function (func, initialValue) {
     return nextValue;
 }
 ```
-29. 获取url中的参数
+# 29. 获取url中的参数
 ```javascript
 function getWindonHref() {
     var sHref = window.location.href;
@@ -505,7 +505,7 @@ function getWindonHref() {
     return obj;
 }
 ```
-30. 数组排序
+# 30. 数组排序
 ```javascript
 // 快排 [left] + min + [right]
 function quickArr(arr) {
@@ -555,7 +555,7 @@ function bubbleSort(arr) {
     return arr;
 }
 ```
-31. 遍历Dom树
+# 31. 遍历Dom树
 ```javascript
 // 给定页面上的DOM元素,将访问元素本身及其所有后代(不仅仅是它的直接子元素)
 // 对于每个访问的元素，函数讲元素传递给提供的回调函数
@@ -567,7 +567,7 @@ function traverse(element, callback) {
     }
 }
 ```
-32. 原生js封装ajax
+# 32. 原生js封装ajax
 ```javascript
 function ajax(method, url, callback, data, flag) {
     var xhr;
@@ -597,7 +597,7 @@ function ajax(method, url, callback, data, flag) {
     }
 }
 ```
-33. 异步加载script
+# 33. 异步加载script
 ```javascript
 function loadScript(url, callback) {
     var oscript = document.createElement('script');
@@ -616,7 +616,7 @@ function loadScript(url, callback) {
     document.body.appendChild(oscript);
 }
 ```
-34. cookie管理
+# 34. cookie管理
 ```javascript
 var cookie = {
     set: function (name, value, time) {
@@ -638,7 +638,7 @@ var cookie = {
     }
 }
 ```
-35. 实现bind()方法
+# 35. 实现bind()方法
 ```javascript
 Function.prototype.myBind = function (target) {
     var target = target || window;
@@ -655,7 +655,7 @@ Function.prototype.myBind = function (target) {
     return F;
 }
 ```
-36. 实现call()方法
+# 36. 实现call()方法
 ```javascript
 Function.prototype.myCall = function () {
     var ctx = arguments[0] || window;
@@ -669,7 +669,7 @@ Function.prototype.myCall = function () {
     return result;
 }
 ```
-37. 实现apply()方法
+# 37. 实现apply()方法
 ```javascript
 Function.prototype.myApply = function () {
     var ctx = arguments[0] || window;
@@ -684,7 +684,7 @@ Function.prototype.myApply = function () {
     return result;
 }
 ```
-38. 防抖
+# 38. 防抖
 ```javascript
 function debounce(handle, delay) {
     var timer = null;
@@ -698,7 +698,7 @@ function debounce(handle, delay) {
     }
 }
 ```
-39. 节流
+# 39. 节流
 ```javascript
 function throttle(handler, wait) {
     var lastTime = 0;
@@ -711,7 +711,7 @@ function throttle(handler, wait) {
     }
 }
 ```
-40. requestAnimFrame兼容性方法
+# 40. requestAnimFrame兼容性方法
 ```javascript
 window.requestAnimFrame = (function () {
     return window.requestAnimationFrame ||
@@ -722,7 +722,7 @@ window.requestAnimFrame = (function () {
         };
 })();
 ```
-41. cancelAnimFrame兼容性方法
+# 41. cancelAnimFrame兼容性方法
 ```javascript
 window.cancelAnimFrame = (function () {
     return window.cancelAnimationFrame ||
@@ -733,7 +733,7 @@ window.cancelAnimFrame = (function () {
         };
 })();
 ```
-42. jsonp底层方法
+# 42. jsonp底层方法
 ```javascript
 function jsonp(url, callback) {
     var oscript = document.createElement('script');
@@ -752,7 +752,7 @@ function jsonp(url, callback) {
     document.body.appendChild(oscript);
 }
 ```
-43. 获取url上的参数
+# 43. 获取url上的参数
 ```javascript
 function getUrlParam(sUrl, sKey) {
     var result = {};
@@ -771,7 +771,7 @@ function getUrlParam(sUrl, sKey) {
     }
 }
 ```
-44. 格式化时间
+# 44. 格式化时间
 ```javascript
 function formatDate(t, str) {
     var obj = {
@@ -796,14 +796,14 @@ function formatDate(t, str) {
     });
 }
 ```
-45. 验证邮箱的正则表达式
+# 45. 验证邮箱的正则表达式
 ```javascript
 function isAvailableEmail(sEmail) {
     var reg = /^([\w+\.])+@\w+([.]\w+)+$/
     return reg.test(sEmail)
 }
 ```
-46. 函数柯里化
+# 46. 函数柯里化
 ```javascript
 //是把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术
 
@@ -822,7 +822,7 @@ function curryIt(fn) {
     return result;
 }
 ```
-47. 大数相加
+# 47. 大数相加
 ```javascript
 function sumBigNumber(a, b) {
     var res = '', //结果
@@ -838,7 +838,7 @@ function sumBigNumber(a, b) {
     return res.replace(/^0+/, '');
 }
 ```
-48. 单例模式
+# 48. 单例模式
 ```javascript
 function getSingle(func) {
     var result;
@@ -850,7 +850,7 @@ function getSingle(func) {
     }
 }
 ```
-49. **获取url参数（3）**
+# 49. **获取url参数（3）**
 ```javascript
 const getUrlParam = function(name) { // 获取url参数
   let reg = new RegExp('(^|&?)' + name + '=([^&]*)(&|$)', 'i')
@@ -861,7 +861,7 @@ const getUrlParam = function(name) { // 获取url参数
   return undefined
 
 ```
-## **50、加载js || css || style**
+# 50、加载js || css || style
 
 ```javascript
 const loadRes = function(name, type, fn) { // 加载js || css || style
@@ -888,7 +888,7 @@ const loadRes = function(name, type, fn) { // 加载js || css || style
 }
 
 ```
-## **51、获取url参数（3）**
+# 51、获取url参数（3）
 
 ```javascript
 const getUrlParam = function(name) { // 获取url参数
@@ -900,7 +900,7 @@ const getUrlParam = function(name) { // 获取url参数
   return undefined
 }
 ```
-## **52、本地存储**
+# 52、本地存储
 
 ```javascript
 const store = { // 本地存储
@@ -936,7 +936,7 @@ const store = { // 本地存储
   }
 }
 ```
-## **53、cookie操作【set，get，del】**
+# 53、cookie操作【set，get，del】
 
 ```javascript
 const cookie = { // cookie操作【set，get，del】
@@ -960,7 +960,7 @@ const cookie = { // cookie操作【set，get，del】
   }
 }
 ```
-## **54、Js获取元素样式【支持内联】**
+# 54、Js获取元素样式【支持内联】
 
 ```javascript
 const getRealStyle = function(obj, styleName) { // Js获取元素样式【支持内联】
@@ -973,7 +973,7 @@ const getRealStyle = function(obj, styleName) { // Js获取元素样式【支持
   return realStyle
 }
 ```
-## **55、时间格式化**
+# 55、时间格式化
 
 ```javascript
 const formatDate = function(fmt, date) { // 时间格式化 【'yyyy-MM-dd hh:mm:ss',时间】
@@ -1000,7 +1000,7 @@ const formatDate = function(fmt, date) { // 时间格式化 【'yyyy-MM-dd hh:mm
   return fmt
 }
 ```
-## **56、原生ajax操作（2）**
+# 56、原生ajax操作（2）
 
 ```javascript
 const ajax = function(conf) { // ajax操作
@@ -1066,7 +1066,7 @@ const ajax = function(conf) { // ajax操作
   }
 }
 ```
-## **57、fetch请求的封装**
+# 57、fetch请求的封装
 
 ```javascript
 const fetch = function(url, setting) { // fetch请求的封装
@@ -1104,7 +1104,7 @@ const fetch = function(url, setting) { // fetch请求的封装
   })
 }
 ```
-## **58、设备判断：android、ios、web**
+# 58、设备判断：android、ios、web
 
 ```javascript
 const isDevice = function() { // 判断是android还是ios还是web
@@ -1118,7 +1118,7 @@ const isDevice = function() { // 判断是android还是ios还是web
   return 'Web'
 }
 ```
-## **59、判断是否为微信**
+# 59、判断是否为微信
 
 ```javascript
 const isWx = function() { // 判断是否为微信
@@ -1129,7 +1129,7 @@ const isWx = function() { // 判断是否为微信
   return false
 }
 ```
-## **60、文本复制功能**
+# 60、文本复制功能
 
 ```javascript
 const copyTxt = function(text, fn) { // 复制功能
@@ -1170,14 +1170,14 @@ const copyTxt = function(text, fn) { // 复制功能
   console.log('复制成功')
 }
 ```
-## **61、判断是否是一个数组**
+# 61、判断是否是一个数组
 
 ```javascript
 const isArray = function(arr) { // 判断是否是一个数组
   return Object.prototype.toString.call(arr) === '[object Array]'
 }
 ```
-## **62、判断两个数组是否相等**
+# 62、判断两个数组是否相等
 
 ```javascript
 const arrayEqual = function(arr1, arr2) { //判断两个数组是否相等
@@ -1189,7 +1189,7 @@ const arrayEqual = function(arr1, arr2) { //判断两个数组是否相等
   return true;
 }
 ```
-## **63、时间与时间戳转换**
+# 63、时间与时间戳转换
 
 ```javascript
 const stamp = { // 时间，时间戳转换
@@ -1202,7 +1202,7 @@ const stamp = { // 时间，时间戳转换
   }
 }
 ```
-## **64、常用正则验证**
+# 64、常用正则验证
 
 ```javascript
 const checkStr = function(str, type) { // 常用正则验证，注意type大小写
@@ -1247,7 +1247,7 @@ const checkStr = function(str, type) { // 常用正则验证，注意type大小�
   }
 }
 ```
-## **65、是否为PC端**
+# 65、是否为PC端
 
 ```javascript
 const isPC = function() { // 是否为PC端
@@ -1263,7 +1263,7 @@ const isPC = function() { // 是否为PC端
   return flag
 }
 ```
-## **66、去除字符串空格**
+# 66、去除字符串空格
 
 ```javascript
 const trim = function(str, type) { // 去除空格， type:  1-所有空格  2-前后空格  3-前空格 4-后空格
@@ -1282,7 +1282,7 @@ const trim = function(str, type) { // 去除空格， type:  1-所有空格  2-�
   }
 }
 ```
-## **67、字符串大小写转换**
+# 67、字符串大小写转换
 
 ```javascript
 const changeCase = function(str, type) { // 字符串大小写转换 type:  1:首字母大写  2：首页母小写  3：大小写转换  4：全部大写  5：全部小写
@@ -1313,7 +1313,7 @@ const changeCase = function(str, type) { // 字符串大小写转换 type:  1:�
   }
 }
 ```
-## **68、过滤html代码**
+# 68、过滤html代码
 
 ```javascript
 const filterTag = function(str) { // 过滤html代码(把<>转换)
@@ -1324,7 +1324,7 @@ const filterTag = function(str) { // 过滤html代码(把<>转换)
   return str
 }
 ```
-## **69、生成随机数范围**
+# 69、生成随机数范围
 
 ```javascript
 const random = function(min, max) { // 生成随机数范围
@@ -1335,7 +1335,7 @@ const random = function(min, max) { // 生成随机数范围
   }
 }
 ```
-## **70、阿拉伯数字转中文大写数字**
+# 70、阿拉伯数字转中文大写数字
 
 ```javascript
 const numberToChinese = function(num) { // 将阿拉伯数字翻译成中文的大写数字
@@ -1383,7 +1383,7 @@ const numberToChinese = function(num) { // 将阿拉伯数字翻译成中文的�
   return re
 }
 ```
-## **71、原生dom操作**
+# 71、原生dom操作
 
 ```javascript
 const dom = {
@@ -1445,7 +1445,7 @@ const dom = {
   }
 }
 ```
-## **72、判断图片加载完成**
+# 72、判断图片加载完成
 
 ```javascript
 const imgLoadAll = function(arr, callback) { // 图片加载
@@ -1462,7 +1462,7 @@ const imgLoadAll = function(arr, callback) { // 图片加载
   }
 }
 ```
-## **73、音频加载完成操作**
+# 73、音频加载完成操作
 
 ```javascript
 const loadAudio = function(src, callback) { // 音频加载
@@ -1471,7 +1471,7 @@ const loadAudio = function(src, callback) { // 音频加载
   audio.src = src
 }
 ```
-## **74、光标所在位置插入字符**
+# 74、光标所在位置插入字符
 
 ```javascript
 const insertAtCursor = function(dom, val) { // 光标所在位置插入字符
@@ -1497,7 +1497,7 @@ const insertAtCursor = function(dom, val) { // 光标所在位置插入字符
   }
 }
 ```
-## **75、图片地址转base64**
+# 75、图片地址转base64
 
 ```javascript
 const getBase64 = function(img) { //传入图片路径，返回base64，使用getBase64(url).then(function(base64){},function(err){}); 
@@ -1522,7 +1522,7 @@ const getBase64 = function(img) { //传入图片路径，返回base64，使用ge
   }
 }
 ```
-## **76、base64图片下载功能**
+# 76、base64图片下载功能
 
 ```javascript
 const downloadFile = function(base64, fileName) { //base64图片下载功能
@@ -1548,14 +1548,14 @@ const downloadFile = function(base64, fileName) { //base64图片下载功能
   aLink.click();
 }
 ```
-## **77、浏览器是否支持webP格式图片**
+# 77、浏览器是否支持webP格式图片
 
 ```javascript
 const isSupportWebP = function() { //判断浏览器是否支持webP格式图片
   return !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;
 }
 ```
-## **78、url参数转对象**
+# 78、url参数转对象
 
 ```javascript
 const parseQueryString = function(url) { //url参数转对象
@@ -1576,7 +1576,7 @@ const parseQueryString = function(url) { //url参数转对象
   return query;
 }
 ```
-## **79、对象序列化【对象转url参数】**
+# 79、对象序列化【对象转url参数】
 
 ```javascript
 const stringfyQueryString = function(obj) { //对象序列化【对象转url参数】
@@ -1595,7 +1595,7 @@ const stringfyQueryString = function(obj) { //对象序列化【对象转url参�
   return pairs.join('&');
 }
 ```
-## **80、H5软键盘缩回、弹起回调**
+# 80、H5软键盘缩回、弹起回调
 
 ```javascript
 const h5Resize = function(downCb, upCb) { //当软件键盘弹起会改变当前 window.innerHeight，监听这个值变化 [downCb 当软键盘弹起后，缩回的回调,upCb 当软键盘弹起的回调]
@@ -1613,7 +1613,7 @@ const h5Resize = function(downCb, upCb) { //当软件键盘弹起会改变当前
   });
 }
 ```
-## **81、函数防抖**
+# 81、函数防抖
 
 ```javascript
 const debounce = function(func, wait, immediate) { //函数防抖[func 函数,wait 延迟执行毫秒数,immediate true 表立即执行,false 表非立即执行,立即执行是触发事件后函数会立即执行，然后n秒内不触发事件才能继续执行函数的效果]
@@ -1636,7 +1636,7 @@ const debounce = function(func, wait, immediate) { //函数防抖[func 函数,wa
   }
 }
 ```
-## **82、函数节流**
+# 82、函数节流
 
 ```javascript
 const throttle = function(func, wait ,type) { //函数节流 [func 函数 wait 延迟执行毫秒数 type 1 表时间戳版，2 表定时器版]

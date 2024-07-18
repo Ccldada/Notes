@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "0c6425661f68cdfa",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa9e35174e2bb046",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "54a6651ff7253cb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4练习ts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "62d2949da7112e88",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e25c3ebbd8ed503",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d49eb7a962aaf34a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ef034d80d0433b72",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5d0b8d7c823aa13e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8f080fe1eb5ce7cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e399787f0f43280",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0d176f6087cb0755",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4练习ts.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "051f4988f116f3c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4练习ts.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e1a63d01cc055db6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5123be1ae231e16e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4练习ts.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "54a6651ff7253cb0",
+  "lastOpenFiles": [
+    "3面向对象.md",
+    "2ts基础.md",
+    "1报错提示.md"
+  ]
+}

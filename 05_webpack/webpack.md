@@ -9,17 +9,21 @@
 
 3.模块化是什么？浏览器怎么请求多个js文件？
 
+```
 css html js   (部分es6)
 
 babel  jsx  ->  webpack  ->html css js
+```
 
 开发和组织代码呢？
 
 网站  首页  登陆  注册  ->  js函数 + js逻辑  
 
+```
 js文件  ->  1js  ->  1次http请求
 
 1js  ->  n个js （利于开发和维护）-> n次http -> webpack -> 1.js
+```
 
 ## 为什么使用webpack？
 
@@ -29,9 +33,11 @@ js文件  ->  1js  ->  1次http请求
 
 glup webpack （打包工具）
 
+```
 create-react-app demo   ///  npm start   (这就是打包）
 
 jsx  （console.log）->  webpack -> loader解析器 plugins插件  -> js
+```
 
 1.入口 -> （需要去打包的文件，jsx）
 
@@ -43,6 +49,7 @@ jsx  （console.log）->  webpack -> loader解析器 plugins插件  -> js
 
 第三方包  运行阶段 express
 
+```
 webpack  编译阶段 
 
   jsx - webpack（编译阶段） - js
@@ -60,11 +67,13 @@ webpack是在编译阶段被使用
 //npm i express -S  ===  --save
 
 //npm i webpack --save-dev === -D
+```
 
 # 步骤
 
 ## 基本打包
 
+```
 1. 创建文件夹 demo
 2. 初始化 npm init -y（生成）-> package.json
 3. 安装webpack以及webpack-cli  
@@ -74,6 +83,7 @@ npm i webpack webpack-cli --save-del
 
 4. webpack 默认人口文件夹src ，在入口文件  index.js  写入代码
 5. 进行打包 npx webpack  得到一个dist出口文件夹，里面含有main.js出口文件，可以键一个新一个新的html来引入main.js来显示
+```
 ## 自定义webpack
 
 1. 新建 webpack.config.js  在里面写初始化模板 
@@ -101,7 +111,7 @@ module.exports = {
 
 //每一次编译随着你的入口和出口文件的变化->
 
-[name]对于是app
+> [name]对于是app
 
 ```xml
 const path = require('path');
@@ -122,11 +132,9 @@ module.exports = {
 ```
 ## plugin
 
-1.清楚多余的文件 clean-webpack-plugin 
-
-1.清除多余的文件
-
-npm i clean-webpack-plugin  --save-del
+1. 清楚多余的文件 
+> clean-webpack-plugin 
+> npm i clean-webpack-plugin  --save-del
 
 ```xml
 const path = require('path');
@@ -158,7 +166,7 @@ module.exports = {
 
 手动去引入出口的js文件到html文件当中去
 
-npm i html-webpack-pugin --save-del
+> npm i html-webpack-pugin --save-del
 
 ```xml
 const path = require('path');
@@ -185,7 +193,7 @@ module.exports = {
 
 引入图片 
 
-npm i file-loader --save-del
+> npm i file-loader --save-del
 
 ```xml
 const path = require('path');
@@ -232,13 +240,13 @@ devtool：“inline-source-map",
 ```
 ## webpack观察者模式
 
-npx webpack --watch 
+> npx webpack --watch 
 
 会自动编译
 
 ## 类似于react 的npm start
 
-先安装 npm i webpack-dev-server --save-del 
+> 先安装 npm i webpack-dev-server --save-del 
 
 在webpack.config.js中添加
 
@@ -264,20 +272,20 @@ devServer : {
   "start": "npx webpack-dev-server --open"
 },
 ```
- 运行 npx webpack
-npm run built
-
-npm built
-
-npm run watch
-
-npm run start   
+>  运行 npx webpack
+> npm run built
+> 
+> npm built
+> 
+> npm run watch
+> 
+> npm run start   
 
 ## 抽离css
 
 先安装  插件
 
-npm i mini-css-extract-plugin --save-dev
+> npm i mini-css-extract-plugin --save-dev
 
 引入
 
@@ -348,10 +356,6 @@ module.exports = {
 //react  vue    
 //react  vue     1.算法 动态规划 ->  
 ```
-
-
-
-。
 
 
 

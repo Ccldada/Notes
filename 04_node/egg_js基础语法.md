@@ -208,8 +208,3 @@ module.exports = PostController;
 npm install --save egg-sequelize mysql2
 
 
-
-
-
-.
-

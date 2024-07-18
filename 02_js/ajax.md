@@ -1,11 +1,11 @@
-1. ajax-json-server
+# 1. ajax-json-server
 AJAX 全称为 Asynchronous JavaScript And XML，就是异步的 JS 和 XML。 
 
 通过 AJAX 可以在浏览器中向服务器发送异步请求，最大的优势：无刷新获取数据。 
 
 AJAX 不是新的编程语言，而是一种将现有的标准组合在一起使用的新方式。 
 
-2. XML
+# 2. XML
 XML 可扩展标记语言。 
 
 XML 被设计用来传输和存储数据。 
@@ -19,14 +19,14 @@ XML 和 HTML 类似，不同的是 HTML 中都是预定义标签，而 XML 中�
 ```java
 {"name":"孙悟空","age":18,"gender":"男"}
 ```
-3. **AJAX****的特点**
-## **1 AJAX****的优点**
+# 3. AJAX的特点
+1 AJAX的优点
 
 1) 可以无需刷新页面而与服务器端进行通信。 
 
 2) 允许你根据用户事件来更新部分页面内容。 
 
-## **2 AJAX****的缺点**
+ 2 AJAX的缺点
 
 1) 没有浏览历史，不能回退 
 
@@ -34,7 +34,7 @@ XML 和 HTML 类似，不同的是 HTML 中都是预定义标签，而 XML 中�
 
 3) SEO (搜索引擎优化)不友好 
 
-4. HTTP协议
+# 4. HTTP协议
 （hypertext transport protocol）协议[超文本传输协议]，协议详细规定了浏览器和万维网服务器之间互相通信的规则。
 
 协议就是一种约定，规则
@@ -42,6 +42,7 @@ XML 和 HTML 类似，不同的是 HTML 中都是预定义标签，而 XML 中�
 * 请求（报文）  浏览器给服务器发送的内容称为请求  request
 格式参数
 
+```
 /
 
 行       GET POST 请求类型   /s?ie=utf-8  url  
@@ -88,8 +89,10 @@ Content-encoding： gzip
 </html>
 
 /
+```
 
-5. chrome查看
+# 5. chrome查看
+```
 GET
 
 Headers
@@ -109,6 +112,7 @@ Headers
 请求行和请求头内容：Resuest Headers
 
 请求体：From Data
+```
 
 # express框架
 
@@ -599,7 +603,7 @@ app.all('/delay', (request, response) => {
 </body>
 </html>
 ```
-7. jq
+# 7. jq
 ## **1. get****请求**
 
 $.get(url, [data], [callback], [type]) 
@@ -701,7 +705,7 @@ app.all('/jquery-server', (request, response) => {
     response.send(JSON.stringify(data));
 });
 ```
-8. axios
+# 8. axios
 ajax工具库
 
 特点：
@@ -828,7 +832,7 @@ app.all('/axios-server', (request, response) => {
 });
 ```
 
-9. fetch
+# 9. fetch
 **Fetch** fetch号称是AJAX的替代品，是在ES6出现的，使用了ES6中的promise对象。Fetch是基于promise设计的。Fetch的代码结构比起ajax简单多。**fetch不是ajax的进一步封装，而是原生js，没有使用XMLHttpRequest对象**。
 
  
@@ -903,8 +907,8 @@ app.all('/fetch-server', (request, response) => {
     response.send(JSON.stringify(data));
 });
 ```
-10. 跨域
-11. 同源策略
+# 10. 跨域
+# 11. 同源策略
 同源策略(Same-Origin Policy)最早由 Netscape 公司提出，是浏览器的一种安全策略。 
 
 同源： 协议、域名、端口号 必须完全相同。 
@@ -1395,5 +1399,3 @@ axios.defaults.withCredentials = true;
  
 * Access-Control-Allow-Credentials 设置为 true
 * Access-Control-Allow-Origin 设置为非 `*`
-# 底部
-

@@ -632,17 +632,3 @@ const mc = new MyEn(123)
 const mc2 = new MyEn<string>('lisi')
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-.
-

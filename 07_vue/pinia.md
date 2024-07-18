@@ -319,7 +319,7 @@ export const useStore = defineStore('main', {
 })
 ```
 可以直接在 store 实例上访问 getter
-```javascript
+```xml
 <template>
   <p>Double count is {{ store.doubleCount }}</p>
 </template>

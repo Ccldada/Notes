@@ -1,5 +1,5 @@
-1. TypeScript 开发环境搭建
-2. 使用npm全局安装typescript
+# 1. TypeScript 开发环境搭建
+1. 使用npm全局安装typescript
    - 进入命令行
 
    - 输入：npm i -g typescript
@@ -12,7 +12,7 @@
 
    - 执行命令：tsc xxx.ts
 
-2. 基本类型
+# 2. 基本类型
 *  类型声明
     * 类型声明是TS非常重要的一个特点
     * 通过类型声明可以指定TS中变量（参数、形参）的类型
@@ -59,20 +59,21 @@ sun(123,123)
     * 当对变量的声明和赋值是同时进行的，TS编译器会自动判断变量的类型
     * 所以如果你的变量的声明和赋值时同时进行的，可以省略掉类型声明
 * 类型：
-|类型|例子|描述|
-|:----|:----|:----|
-|number|1, -33, 2.5|任意数字|
-|string|'hi', "hi", hi|任意字符串|
-|boolean|true、false|布尔值true或false|
-|字面量|其本身|限制变量的值就是该字面量的值|
-|any|*|任意类型|
-|unknown|*|类型安全的any|
-|void|空值（undefined）|没有值（或undefined）|
-|never|没有值|不能是任何值|
-|object|{name:'孙悟空'}|任意的JS对象|
-|array|[1,2,3]|任意JS数组|
-|tuple|[4,5]|元素，TS新增类型，固定长度数组|
-|enum|enum{A, B}|枚举，TS中新增类型|
+
+| 类型      | 例子             | 描述               |
+| ------- | -------------- | ---------------- |
+| number  | 1, -33, 2.5    | 任意数字             |
+| string  | 'hi', "hi", hi | 任意字符串            |
+| boolean | true、false     | 布尔值true或false    |
+| 字面量     | 其本身            | 限制变量的值就是该字面量的值   |
+| any     | *              | 任意类型             |
+| unknown | *              | 类型安全的any         |
+| void    | 空值（undefined）  | 没有值（或undefined）  |
+| never   | 没有值            | 不能是任何值           |
+| object  | {name:'孙悟空'}   | 任意的JS对象          |
+| array   | [1,2,3]        | 任意JS数组           |
+| tuple   | [4,5]          | 元素，TS新增类型，固定长度数组 |
+| enum    | enum{A, B}     | 枚举，TS中新增类型       |
 
 * number 
 ```typescript
@@ -135,7 +136,7 @@ let c: Color = Color.Green;
 enum Color {   Red = 1,   Green = 2,   Blue = 4, } 
 let c: Color = Color.Green; 
 ```
-3. 编译选项
+# 3. 编译选项
 *  自动编译文件
     * 编译文件时，使用 -w 指令后，TS编译器会自动监视文件的变化，并在文件发生变化时对文件进行重新编译。
     * 示例：
@@ -306,7 +307,7 @@ typescript "compilerOptions": {   "module": "CommonJS" }
     *  noEmitOnError
         * 有错误的情况下不进行编译
         * 默认值：false
-4. webpack
+# 4. webpack
 * 通常情况下，实际开发中我们都需要使用构建工具对代码进行打包，TS同样也可以结合构建工具一起使用，下边以webpack为例介绍一下如何结合构建工具使用TS。
 * 步骤：
     * 初始化项目
@@ -389,7 +390,7 @@ json {  ...略...
  ...略... } 
 ```
 * 在src下创建ts文件，并在并命令行执行`npm run build`对代码进行编译，或者执行`npm start`来启动开发服务器
-5. html
+# 5. html
 ```typescript
 npm i -D html-webpack-plugin
 ```
@@ -406,7 +407,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
         }),
     ]
 ```
-6. 服务器
+# 6. 服务器
 ```typescript
 npm i -D webpack-dev-server
 ```
@@ -422,7 +423,7 @@ npm i -D webpack-dev-server
 npm i -D clean-webpack-plugin
 清除先前内容
 
-7. Babel
+# 7. Babel
 经过一系列的配置，使得TS和webpack已经结合到了一起，除了webpack，开发中还经常需要结合babel来对代码进行转换以使其可以兼容到更多的浏览器，在上述步骤的基础上，通过以下步骤再将babel引入到项目中。
 
     * 安装依赖包：

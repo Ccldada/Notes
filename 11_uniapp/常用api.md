@@ -102,15 +102,15 @@ OBJECT 参数说明
 
 success 返回参数说明
 
-|参数|类型|说明|
-|:----|:----|:----|
-|userInfo|OBJECT|用户信息对象|
-|rawData|String|不包括敏感信息的原始数据字符串，用于计算签名。|
-|signature|String|使用 sha1( rawData + sessionkey ) 得到字符串，用于校验用户信息。|
-|encryptedData|String|包括敏感数据在内的完整用户信息的加密数据，详细见加密数据解密算法。|
-|iv|String|加密算法的初始向量，详细见加密数据解密算法。|
-|cloudID|String|敏感数据对应的云 ID，开通云开发的小程序才会返回，可通过云调用直接获取开放数据，详细见云调用直接获取开放数据|
-|errMsg|String|描述信息|
+| 参数            | 类型     | 说明                                                      |
+| :------------ | :----- | :------------------------------------------------------ |
+| userInfo      | OBJECT | 用户信息对象                                                  |
+| rawData       | String | 不包括敏感信息的原始数据字符串，用于计算签名。                                 |
+| signature     | String | 使用 sha1( rawData + sessionkey ) 得到字符串，用于校验用户信息。         |
+| encryptedData | String | 包括敏感数据在内的完整用户信息的加密数据，详细见加密数据解密算法。                       |
+| iv            | String | 加密算法的初始向量，详细见加密数据解密算法。                                  |
+| cloudID       | String | 敏感数据对应的云 ID，开通云开发的小程序才会返回，可通过云调用直接获取开放数据，详细见云调用直接获取开放数据 |
+| errMsg        | String | 描述信息                                                    |
 
 userInfo 参数说明
 
@@ -291,7 +291,6 @@ OBJECT 参数说明
 |fail|Function|否|接口调用失败的回调函数|    |
 |complete|Function|否|接口调用结束的回调函数（调用成功、失败都会执行）|    |
 
-
 # 界面
 
 ## uni.createSelectorQuery()
@@ -302,20 +301,5 @@ Tips:
 
 * 使用 `uni.createSelectorQuery()` 需要在生命周期 `mounted` 后进行调用。
 * 默认需要使用到 `selectorQuery.in` 方法。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# .底部
 
 
