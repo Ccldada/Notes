@@ -66,9 +66,9 @@ j-book
 这个组件就定义了⼀个名为 /about 的路由，可以通过访问 [http://localhost:3000/about](http://localhost:3000/about) 来访问。 
 这时会报错提示：'Page not found: /', 
 
-那么需要配置< NuxtPage>来显示我们建⽴的路由⻚⾯，  < NuxtPage>是Nuxt⾃带的内置组件。 需要 NuxtPage 来显示位于 pages/ ⽬录中的顶层⻚⾯或 嵌套⻚⾯。
+那么需要配置NuxtPage来显示我们建⽴的路由⻚⾯，NuxtPage是Nuxt⾃带的内置组件。 需要 NuxtPage 来显示位于 pages/ ⽬录中的顶层⻚⾯或 嵌套⻚⾯。
 
-< NuxtPage>是 Nuxt ⾃带的内置组件。NuxtPage需要显示位于⽬录中的顶级或嵌套⻚⾯pages/。NuxtPage是Vue Router 组件的包装器。 
+NuxtPage是 Nuxt ⾃带的内置组件。NuxtPage需要显示位于⽬录中的顶级或嵌套⻚⾯pages/。NuxtPage是Vue Router 组件的包装器。 
 
 ```xml
 <template>

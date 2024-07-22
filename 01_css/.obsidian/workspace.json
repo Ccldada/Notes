@@ -13,11 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "unocss基础使用.md",
+                "file": "grid布局.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "9d36acf9077383dd"
+          }
+        ]
+      },
+      {
+        "id": "48fd17e67afb1460",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96626d01de769530",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "grid布局.md"
+              }
+            },
+            "group": "9d36acf9077383dd"
           }
         ]
       }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unocss基础使用.md",
+                "file": "grid布局.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unocss基础使用.md",
+                "file": "grid布局.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "unocss基础使用.md"
+                "file": "grid布局.md"
               }
             }
           }
@@ -146,10 +164,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2e00246650de0cb1",
+  "active": "96626d01de769530",
   "lastOpenFiles": [
-    "html标签.md",
     "unocss基础使用.md",
+    "html标签.md",
     "css.md",
     "grid布局.md",
     "css选择器.md",

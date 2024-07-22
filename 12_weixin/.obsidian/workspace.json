@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-小程序样式与组件.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "e21985e837390e5f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-小程序样式与组件.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-小程序样式与组件.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-小程序样式与组件.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,7 +156,20 @@
   },
   "active": "21006cb2b8afab70",
   "lastOpenFiles": [
+    "13-上线发布.md",
+    "12-小程序补充与拓展.md",
+    "11-小程序开放能力.md",
+    "10-小程序分包加载.md",
+    "09-小程序 npm 使用.md",
+    "08-小程序自定义组件.md",
+    "07-小程序原生 API.md",
+    "06-小程序生命周期.md",
+    "05-小程序模板语法.md",
+    "04-小程序事件系统.md",
+    "03-小程序样式与组件.md",
     "02-小程序配置文件.md",
-    "01-小程序基础.md"
+    "01-小程序基础.md",
+    "README.md",
+    "Pasted image 20240722143817.png"
   ]
 }

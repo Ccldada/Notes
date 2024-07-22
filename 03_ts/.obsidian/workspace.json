@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4练习ts.md",
+                "file": "2ts基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4练习ts.md",
+                "file": "2ts基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "4练习ts.md",
+                "file": "2ts基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "4练习ts.md"
+                "file": "2ts基础.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "54a6651ff7253cb0",
   "lastOpenFiles": [
+    "4练习ts.md",
     "3面向对象.md",
     "2ts基础.md",
     "1报错提示.md"
