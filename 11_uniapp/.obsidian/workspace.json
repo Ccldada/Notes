@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6ed0410c07c08b6c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,6 +157,6 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "32740e3b5c6d2de3",
+  "active": "6ed0410c07c08b6c",
   "lastOpenFiles": []
 }

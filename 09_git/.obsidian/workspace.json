@@ -11,8 +11,12 @@
             "id": "1a08835641ed98af",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "git 基本使用.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "git 基本使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "git 基本使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "git 基本使用.md"
+              }
             }
           }
         ]
@@ -139,5 +147,8 @@
     }
   },
   "active": "1a08835641ed98af",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Pasted image 20240723092805.png",
+    "git 基本使用.md"
+  ]
 }
