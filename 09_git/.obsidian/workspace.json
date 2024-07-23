@@ -15,6 +15,7 @@
               "state": {
                 "file": "git 基本使用.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
@@ -148,7 +149,17 @@
   },
   "active": "1a08835641ed98af",
   "lastOpenFiles": [
-    "Pasted image 20240723092805.png",
+    "Pasted image 20240723104617.png",
+    "Pasted image 20240723104600.png",
+    "Pasted image 20240723103946.png",
+    "Pasted image 20240723103934.png",
+    "Pasted image 20240723103921.png",
+    "Pasted image 20240723103908.png",
+    "Pasted image 20240723101932.png",
+    "Pasted image 20240723101253.png",
+    "Pasted image 20240723101215.png",
+    "Pasted image 20240723101202.png",
+    "Pasted image 20240723095416.png",
     "git 基本使用.md"
   ]
 }
