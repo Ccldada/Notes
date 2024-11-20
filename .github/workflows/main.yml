@@ -18,6 +18,8 @@ jobs:
           submodules: true
 
       - name: Pull & update submodules recursively
+        env:
+          ACCESS_TOKEN: ${{ secrets.PRIVATE_TOKEN_GITHUB  }}
         run: |
           git submodule update --init --recursive
           git submodule update --recursive --remote
