@@ -11,12 +11,9 @@
             "id": "1a08835641ed98af",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "git 基本使用.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
+                "file": "Pasted image 20240723092805.png"
               }
             }
           }
@@ -86,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git 基本使用.md",
+                "file": "Pasted image 20240723092805.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git 基本使用.md",
+                "file": "Pasted image 20240723092805.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git 基本使用.md"
+                "file": "Pasted image 20240723092805.png"
               }
             }
           }
@@ -149,17 +146,17 @@
   },
   "active": "1a08835641ed98af",
   "lastOpenFiles": [
+    "Pasted image 20240723095314.png",
+    "Pasted image 20240723095416.png",
+    "Pasted image 20240723101253.png",
+    "Pasted image 20240723103934.png",
     "Pasted image 20240723104617.png",
+    "git 基本使用.md",
     "Pasted image 20240723104600.png",
     "Pasted image 20240723103946.png",
-    "Pasted image 20240723103934.png",
     "Pasted image 20240723103921.png",
     "Pasted image 20240723103908.png",
     "Pasted image 20240723101932.png",
-    "Pasted image 20240723101253.png",
-    "Pasted image 20240723101215.png",
-    "Pasted image 20240723101202.png",
-    "Pasted image 20240723095416.png",
-    "git 基本使用.md"
+    "Pasted image 20240723101215.png"
   ]
 }
