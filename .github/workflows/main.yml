@@ -29,3 +29,4 @@ jobs:
           git add --all
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
+
