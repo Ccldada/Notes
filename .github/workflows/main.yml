@@ -18,6 +18,8 @@ jobs:
           submodules: true
 
       - name: Pull & update submodules recursively
+        env:
+          ACCESS_TOKEN: ${{ secrets.PRIVATE_TOKEN_GITHUB  }}
         run: |
           git submodule update --init --recursive
           git submodule update --recursive --remote
@@ -29,3 +31,4 @@ jobs:
           git add --all
           git commit -m "Update submodules" || echo "No changes to commit"
           git push
+
