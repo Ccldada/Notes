@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b2410995ba37ac3e",
+        "id": "b4a85f230e4cc42a",
         "type": "tabs",
         "children": [
           {
-            "id": "1a08835641ed98af",
+            "id": "9f9ca594f9a0ed8d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "canvas",
               "state": {
-                "file": "Pasted image 20240723092805.png"
-              }
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
             }
           }
         ]
@@ -37,7 +44,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -52,7 +61,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -60,7 +71,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -83,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240723092805.png",
+                "file": "未命名.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -91,7 +104,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -100,10 +115,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240723092805.png",
+                "file": "未命名.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -114,7 +131,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -123,8 +142,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240723092805.png"
-              }
+                "file": "未命名.canvas"
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
             }
           }
         ]
@@ -144,19 +165,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1a08835641ed98af",
+  "active": "9f9ca594f9a0ed8d",
   "lastOpenFiles": [
-    "Pasted image 20240723095314.png",
-    "Pasted image 20240723095416.png",
-    "Pasted image 20240723101253.png",
-    "Pasted image 20240723103934.png",
-    "Pasted image 20240723104617.png",
-    "git 基本使用.md",
-    "Pasted image 20240723104600.png",
-    "Pasted image 20240723103946.png",
-    "Pasted image 20240723103921.png",
-    "Pasted image 20240723103908.png",
+    "未命名.canvas",
     "Pasted image 20240723101932.png",
-    "Pasted image 20240723101215.png"
+    "Pasted image 20240723101253.png",
+    "Pasted image 20240723101215.png",
+    "Pasted image 20240723101202.png",
+    "Pasted image 20240723095353.png",
+    "Pasted image 20240723095314.png",
+    "Pasted image 20240723095239.png",
+    "Pasted image 20240723092805.png",
+    "Pasted image 20240723095416.png",
+    "Pasted image 20240723103934.png",
+    "git 基本使用.md"
   ]
 }
